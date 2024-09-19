@@ -76,4 +76,22 @@
       })
     })
   })
+
+  // ハンバーガーメニュー
+  const headerInner = document.getElementById('js-headerInner');
+  const headerButton = document.getElementById('js-headerButton');
+  const headerMenu = document.getElementById('js-headerMenu');
+  const headerLine1 = document.getElementById('js-headerLine1');
+  const headerLine2 = document.getElementById('js-headerLine2');
+
+  headerButton.addEventListener('click', () => {
+    headerLine1.classList.toggle('top-1/2');
+    headerLine1.classList.toggle('rotate-45');
+    headerLine1.classList.toggle('-translate-y-1/2');
+    headerLine2.classList.toggle('top-1/2');
+    headerLine2.classList.toggle('-rotate-45');
+    headerLine2.classList.toggle('-translate-y-1/2');
+    headerInner.classList.toggle('opacity-0');
+    headerMenu.classList.toggle('hidden');
+  })
 }
