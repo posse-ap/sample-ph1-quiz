@@ -85,12 +85,14 @@
   const headerLine2 = document.getElementById('js-headerLine2');
 
   headerButton.addEventListener('click', () => {
+    // ボタンのアニメーション
     headerLine1.classList.toggle('top-1/2');
     headerLine1.classList.toggle('rotate-45');
     headerLine1.classList.toggle('-translate-y-1/2');
     headerLine2.classList.toggle('top-1/2');
     headerLine2.classList.toggle('-rotate-45');
     headerLine2.classList.toggle('-translate-y-1/2');
+    // メニューの表示
     headerInner.classList.toggle('opacity-0');
     headerMenu.classList.toggle('hidden');
   })
