@@ -13,26 +13,25 @@
 </head>
 
 <body>
-  <header id="js-header" class="fixed top-0 left-0 right-0 z-1000 bg-white flex items-center md:px-6 md:py-[15px]">
-    <div class="relative z-100 w-30 md:w-37">
+  <header id="js-header" class="fixed top-0 left-0 right-0 z-50 bg-white flex items-center px-6 py-4">
+    <div class="relative z-40 w-28 md:w-36">
       <img src="../assets/img/logo.svg" alt="POSSE">
     </div>
-    <!-- <button id="js-headerButton" class="fixed top-2 right-5 h-10 w-10 z-1000 md:hidden relative">
-      <span class="absolute block w-8.5 h-px bg-gray-800 top-3 transform -translate-x-1/2 transition-transform"></span>
-      <span class="absolute block w-8.5 h-px bg-gray-800 top-6.5 transform -translate-x-1/2 transition-transform"></span>
-    </button> -->
-    <div class="flex md:items-center md:ml-auto">
-      <!-- <div class="items-center flex flex-col gap-6 mt-auto md:hidden">
-        <a href="https://line.me/R/ti/p/@651htnqp?from=page" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white text-center font-bold text-sm rounded-full py-4 px-6 relative w-full">
-          <i class="inline-block text-2xl mr-2 align-middle"></i>
+    <button id="js-headerButton" class="fixed w-10 h-10 top-2 right-5 z-40">
+      <span class="absolute top-3 left-1/2 w-9 h-px bg-gray-800 transform -translate-x-1/2 transition-transform duration-400"></span>
+      <span class="absolute top-7 left-1/2 w-9 h-px bg-gray-800 transform -translate-x-1/2 transition-transform duration-400"></span>
+    </button>
+    <div class="hidden fixed bg-white flex flex-col inset-0 opacity-0 pt-32 px-4 pb-10 transition-opacity duration-400">
+      <div class="items-center flex flex-col gap-6 mt-auto">
+        <a href="https://line.me/R/ti/p/@651htnqp?from=page" target="_blank" rel="noopener noreferrer" class="bg-[#5FDF5B] rounded-full text-white flex items-center justify-center text-sm font-bold tracking-widest p-4 relative text-center w-full">
+          <img src="./assets/img/icon-line.svg" alt="icon-line" class="size-7 mr-2">
           <span>POSSE公式LINEを追加</span>
-          <i class="absolute right-5 top-1/2 transform -translate-y-1/2 text-lg"></i>
         </a>
         <a href="" class="text-gray-600 text-sm leading-7">
           POSSE 公式サイト<i class="ml-1 text-sm"></i>
         </a>
-      </div> -->
-      <ul class="flex gap-4 md:ml-8">
+      </div>
+      <ul class="flex gap-4 justify-center mt-5">
         <li>
           <a href="https://twitter.com/posse_2023" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="inline-flex items-center justify-center border border-gray-200 rounded-full text-gray-400 text-2xl h-12 w-12">
             <img src="./assets/img/icon-twitter.png" alt="Twitter" class="size-8" />
@@ -45,16 +44,16 @@
         </li>
       </ul>
     </div>
-  </header>  
+  </header>
   <!-- header -->
 
-  <main class="pt-20">
-    <section class="relative pt-15 pb-8 md:pt-28 md:pb-20">
-      <img src="./assets/img/bg-hero.jpg" alt="ITクイズ" class="absolute inset-0 w-full h-full object-cover -z-10">
+  <main class="pt-14 md:pt-20">
+    <section class="relative pt-14 px-4 pb-8 md:pt-28 md:pb-20">
+      <img src="./assets/img/bg-hero.jpg" alt="ITクイズ" class="absolute inset-0 w-full h-full object-cover bg-center -z-10">
       <div class="relative mx-auto max-w-[1032px] px-4 w-full md:px-6">
         <h1 class="text-white font-bold">
           <span class="text-sm leading-[1.8] md:text-lg">POSSE課題</span>
-          <span class="block text-2xl leading-[1.5] md:text-[60px] md:mt-3">ITクイズ</span>
+          <span class="block text-3xl leading-[1.5] md:text-[60px] md:mt-3">ITクイズ</span>
         </h1>
       </div>
     </section>
@@ -334,11 +333,11 @@
   <!-- / line -->
 
   <footer class="mt-18 text-center border-t border-gray border-solid md:mt-20">
-    <div class="fixed bottom-0 right-0 md:bottom-4 md:right-4">
+    <div class="fixed left-0 bottom-0 right-0 md:left-auto md:bottom-4 md:right-4">
       <a href="https://line.me/R/ti/p/@651htnqp?from=page" target="_blank" rel="noopener noreferrer"
-        class="items-center bg-[#5fdf5b] flex pt-2 md:rounded-2xl md:shadow-md md:shadow-[rgba(0, 0, 0, 0.15)] md:p-5">
-        <img src="./assets/img/icon-line.svg" alt="icon-line" class="size-9">
-        <p class="text-white text-sm font-bold tracking-widest leaning-[1.3] text-left md:ml-4"><span class="hidden md:inline-block">POSSE</span>公式LINEで<br>最新情報をGET！</p>
+        class="items-center bg-[#5fdf5b] flex justify-center gap-2 p-2 pt-2 md:rounded-2xl md:shadow-md md:shadow-[rgba(0, 0, 0, 0.15)] md:p-5 md:justify-start md:gap-0">
+        <img src="./assets/img/icon-line.svg" alt="icon-line" class="size-7 md:size-9">
+        <p class="text-white text-sm font-bold tracking-widest leaning-[1.3] text-left md:ml-4"><span class="hidden md:inline-block">POSSE</span>公式LINEで<br class="hidden md:block">最新情報をGET！</p>
       </a>
     </div>
     <div class="pt-14 px-6 pb-8 md:pb-12">
