@@ -80,17 +80,17 @@
   // ハンバーガーメニュー
   const headerInner = document.getElementById('js-headerInner');
   const headerButton = document.getElementById('js-headerButton');
-  const headerLine1 = document.getElementById('js-headerLine1');
-  const headerLine2 = document.getElementById('js-headerLine2');
+  const headerLineTop = document.getElementById('js-headerLineTop');
+  const headerLineBottom = document.getElementById('js-headerLineBottom');
 
   headerButton.addEventListener('click', () => {
     // ボタンのアニメーション
-    headerLine1.classList.toggle('top-1/2');
-    headerLine1.classList.toggle('rotate-45');
-    headerLine1.classList.toggle('-translate-y-1/2');
-    headerLine2.classList.toggle('top-1/2');
-    headerLine2.classList.toggle('-rotate-45');
-    headerLine2.classList.toggle('-translate-y-1/2');
+    headerLineTop.classList.toggle('top-1/2');
+    headerLineTop.classList.toggle('rotate-45');
+    headerLineTop.classList.toggle('-translate-y-1/2');
+    headerLineBottom.classList.toggle('top-1/2');
+    headerLineBottom.classList.toggle('-rotate-45');
+    headerLineBottom.classList.toggle('-translate-y-1/2');
     // メニューの表示
     headerInner.classList.toggle('opacity-0');
   })
