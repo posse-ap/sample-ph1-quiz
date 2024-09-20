@@ -1,6 +1,25 @@
 'use strict';
 
 {
+  // ハンバーガーメニュー
+  const headerInner = document.getElementById('js-headerInner');
+  const headerButton = document.getElementById('js-headerButton');
+  const headerLineTop = document.getElementById('js-headerLineTop');
+  const headerLineBottom = document.getElementById('js-headerLineBottom');
+
+  headerButton.addEventListener('click', () => {
+    // ボタンのアニメーション
+    headerLineTop.classList.toggle('top-1/2');
+    headerLineTop.classList.toggle('rotate-45');
+    headerLineTop.classList.toggle('-translate-y-1/2');
+    headerLineBottom.classList.toggle('top-1/2');
+    headerLineBottom.classList.toggle('-rotate-45');
+    headerLineBottom.classList.toggle('-translate-y-1/2');
+    // メニューの表示
+    headerInner.classList.toggle('opacity-0');
+    headerInner.classList.toggle('invisible');
+  })
+
   // 回答一覧
   const CORRECT_ANSWERS = [
     {
@@ -75,24 +94,5 @@
         setBoxClass(answerBox, isCorrect);
       })
     })
-  })
-
-  // ハンバーガーメニュー
-  const headerInner = document.getElementById('js-headerInner');
-  const headerButton = document.getElementById('js-headerButton');
-  const headerLineTop = document.getElementById('js-headerLineTop');
-  const headerLineBottom = document.getElementById('js-headerLineBottom');
-
-  headerButton.addEventListener('click', () => {
-    // ボタンのアニメーション
-    headerLineTop.classList.toggle('top-1/2');
-    headerLineTop.classList.toggle('rotate-45');
-    headerLineTop.classList.toggle('-translate-y-1/2');
-    headerLineBottom.classList.toggle('top-1/2');
-    headerLineBottom.classList.toggle('-rotate-45');
-    headerLineBottom.classList.toggle('-translate-y-1/2');
-    // メニューの表示
-    headerInner.classList.toggle('opacity-0');
-    headerInner.classList.toggle('invisible');
   })
 }
