@@ -93,5 +93,6 @@
     headerLineBottom.classList.toggle('-translate-y-1/2');
     // メニューの表示
     headerInner.classList.toggle('opacity-0');
+    headerInner.classList.toggle('hidden');
   })
 }
