@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 {
   // 回答一覧
